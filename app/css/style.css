@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+html {
+  background: #afabdf;
+}
+
+body {
+  font-family: 'Fredoka One', cursive;
+  margin: 0;
+}
+
+.main {
+  border: 5px solid #352c99;
+  width: 400px;
+  margin: 100px auto 0;
+  padding: 20px 20px;
+  background: rgba(112, 104, 196, 0.7);
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(53, 44, 153, 0.7);
+          box-shadow: 5px 5px 5px 5px rgba(53, 44, 153, 0.7);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.main #whoamI {
+  margin: 0px;
+  font-size: 1em;
+}
+
+.main #more {
+  margin: 0px;
+  font-size: 1em;
+  text-align: right;
+}
+
+.main span {
+  background: #0fcab1;
+  border-radius: 5px;
+  padding: 0 8px;
+}
+
+.main span:hover {
+  background: rgba(53, 44, 153, 0.4);
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    width: 250px;
+    font-size: 1rem;
+  }
+}
+
+#socials {
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+#socials li {
+  display: inline-block;
+  margin: 10px 10px;
+}
+
+#socials a {
+  opacity: 0.5;
+}
+
+#socials a:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+  #socials {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+/*# sourceMappingURL=style.css.map */

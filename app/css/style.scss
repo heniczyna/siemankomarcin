@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+html{
+    background: rgb(175, 171, 223);
+}
+
+body{
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+}
+
+.main{
+    border: 5px solid rgb(53, 44, 153);
+    width: 400px;
+    margin: 100px auto 0; // if three values: top, right and left, bottom
+    padding: 20px 20px;
+    background: rgba(112, 104, 196, 0.7);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(53, 44, 153, 0.70); // x y blur-radius blur-spread
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem; // 1rem 16px (computed 48px seems this is 1.5*16=24 and h1 makes it double 48px) 
+
+    #whoamI{
+        margin: 0px;
+        font-size: 1em;
+    }
+
+    #more{
+        margin: 0px;
+        font-size: 1em;
+        text-align: right;
+    }
+    
+    span{
+        background: rgb(15, 202, 177);
+        border-radius: 5px;
+        padding: 0 8px;
+        
+        &:hover{
+            background: rgba(53, 44, 153, 0.4);
+        }
+    }
+
+    @media only screen and (max-width: 1000px){ // works when browser window is 1000px or less
+        width: 250px;
+        font-size: 1rem;
+    }
+}
+
+#socials{
+    padding: 0px; // without that it takes 40px of padding
+    list-style: none;
+    text-align: center;
+
+    li{
+        display: inline-block;
+        margin: 10px 10px;
+    }
+
+    a{
+        opacity: 0.5;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    @media only screen and (max-width: 1000px){
+        transform: scale(0.7);
+    }
+}
